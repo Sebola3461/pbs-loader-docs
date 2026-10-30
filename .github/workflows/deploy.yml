@@ -24,6 +24,12 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm test
+      # Baixa o .api.json do release mais novo de cada biblioteca do pbsu-loader. Sem release, o site sai sem a referência
+      # e o passo deixa um aviso no resumo do workflow.
+      - run: npm run reference
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
