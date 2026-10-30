@@ -31,7 +31,7 @@ export default defineConfig({
 					label: 'Começando',
 					items: [{ slug: 'comecando/sobre-esta-documentacao' }],
 				},
-				...(hasReference ? [{ label: 'Referência da API', collapsed: true, items: referenceSidebar }] : []),
+				...(hasReference ? [{ label: 'Referência da API', items: referenceSidebar }] : []),
 			],
 			plugins: [
 				starlightLlmsTxt({

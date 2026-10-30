@@ -210,7 +210,7 @@ function librarySidebar({ document }, index) {
 	}));
 	return {
 		label: document.assembly,
-		collapsed: true,
+		collapsed: false,
 		items: [{ label: 'Visão geral', slug: librarySlug(document.assembly) }, ...namespaces],
 	};
 }

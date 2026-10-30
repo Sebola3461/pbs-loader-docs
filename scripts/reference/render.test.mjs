@@ -127,7 +127,8 @@ test('sidebar por biblioteca e namespace', () => {
 	assert.deepEqual(sidebar[0], { label: 'Visão geral', slug: 'referencia' });
 	const utils = sidebar[1];
 	assert.equal(utils.label, 'PBSLoaderCommonUtils');
-	assert.equal(utils.collapsed, true);
+	assert.equal(utils.collapsed, false);
+	assert.ok(utils.items.slice(1).every((group) => group.collapsed));
 	assert.deepEqual(utils.items[0], { label: 'Visão geral', slug: 'referencia/pbsloadercommonutils' });
 	const labels = utils.items.slice(1).map((group) => group.label);
 	assert.deepEqual(labels, ['(global)', 'Outro', 'PBSLoaderCommonUtils', 'PBSLoaderCommonUtils.Conteudo', 'PBSLoaderCommonUtils.Veiculos']);

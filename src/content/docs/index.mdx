@@ -5,32 +5,53 @@ template: splash
 hero:
   tagline: Escreva mods para o Proton Bus Simulator Urbano sem tocar nas classes Il2Cpp do jogo e sem escrever patch Harmony.
   actions:
+    - text: Referência da API
+      link: referencia/
+      icon: right-arrow
     - text: Sobre esta documentação
       link: comecando/sobre-esta-documentacao/
-      icon: right-arrow
+      variant: secondary
     - text: Repositório do PBSU Loader
       link: https://github.com/Sebola3461/pbsu-loader
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 A PBSLoaderCommonUtils é a base que o PBSU Loader instala junto com o MelonLoader. Ela lê o estado do jogo a cada quadro e entrega esses dados ao seu mod em classes como `Veiculo`, `Mapa`, `Linha` e `Tempo`. Também oferece ganchos no jogo, atalhos de teclado com detecção de conflito, avisos na tela e uma simulação de ar comprimido.
 
 <CardGrid>
-	<Card title="Veículo e condução" icon="rocket">
-		Velocidade, motor, câmbio, pedais, luzes e portas do ônibus do jogador. Com `Comandos` e `Conducao`, o mod também aciona a carroceria e dirige.
-	</Card>
-	<Card title="Mapa, linha e passageiros" icon="open-book">
-		Paradas carregadas, o ponto atual, o próximo ponto estimado e quem embarcou ou desceu.
-	</Card>
-	<Card title="Ganchos" icon="puzzle">
-		Pontos de entrada na física, nos freios, nas rodas, no som do motor e nos pedidos de porta, cada um com um único patch dentro do SDK.
-	</Card>
-	<Card title="Scripts de ônibus e mapa" icon="document">
-		Uma DLL dentro da pasta do ônibus ou do mapa, que só roda enquanto esse conteúdo está em uso e pede permissão ao jogador.
-	</Card>
+	<LinkCard
+		title="Veículo e condução"
+		description="Velocidade, motor, câmbio, pedais, luzes e portas do ônibus do jogador. Com Comandos e Conducao, o mod também aciona a carroceria e dirige."
+		href="referencia/pbsloadercommonutils/veiculos/veiculo/"
+	/>
+	<LinkCard
+		title="Mapa, linha e passageiros"
+		description="Paradas carregadas, o ponto atual, o próximo ponto estimado e quem embarcou ou desceu."
+		href="referencia/pbsloadercommonutils/linhas/linha/"
+	/>
+	<LinkCard
+		title="Ganchos"
+		description="Pontos de entrada na física, nos freios, nas rodas, no som do motor e nos pedidos de porta, cada um com um único patch dentro do SDK."
+		href="referencia/pbsloadercommonutils/ganchos/"
+	/>
+	<LinkCard
+		title="Scripts de ônibus e mapa"
+		description="Uma DLL dentro da pasta do ônibus ou do mapa, que só roda enquanto esse conteúdo está em uso e pede permissão ao jogador."
+		href="referencia/pbsloadercommonutils/conteudo/scriptdeonibus/"
+	/>
+	<LinkCard
+		title="Interface: menus, painéis e HUD"
+		description="PainelMods, Paineis e Hud, da PBSLoaderCommonInterface, para o seu mod aparecer no menu Mods e na tela."
+		href="referencia/pbsloadercommoninterface/"
+	/>
+	<LinkCard
+		title="Todas as classes"
+		description="A lista completa de tipos da PBSLoaderCommonUtils, separada por namespace."
+		href="referencia/pbsloadercommonutils/"
+	/>
 </CardGrid>
 
 A versão atual da API é a 2.0.0, testada no jogo versão 307 com MelonLoader 0.7.3.
