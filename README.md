@@ -1,4 +1,4 @@
-# PBSU Loader SDK: documentação
+# PBSLoader SDK: documentação
 
 Site da documentação do SDK de mods do Proton Bus Simulator Urbano (PBSLoaderCommonUtils), publicado em <https://sebola3461.github.io/pbs-loader-docs/>. O código do SDK fica no repositório [pbsu-loader](https://github.com/Sebola3461/pbsu-loader).
 

@@ -16,7 +16,7 @@ export default defineConfig({
 	trailingSlash: 'always',
 	integrations: [
 		starlight({
-			title: 'PBSU Loader SDK',
+			title: 'PBSLoader SDK',
 			description:
 				'Documentação do SDK de mods do Proton Bus Simulator Urbano (PBSLoaderCommonUtils), em português.',
 			defaultLocale: 'root',
@@ -43,7 +43,7 @@ export default defineConfig({
 			],
 			plugins: [
 				starlightLlmsTxt({
-					projectName: 'PBSU Loader SDK (PBSLoaderCommonUtils)',
+					projectName: 'PBSLoader SDK (PBSLoaderCommonUtils)',
 					description:
 						'SDK em C# para mods MelonLoader do Proton Bus Simulator Urbano. Lê o jogo (veículo, mapa, linha, passageiros, hora, clima, câmera) e expõe classes estáticas com nomes em português.',
 					details: [

@@ -333,7 +333,7 @@ if (Opcoes.CarrosNoTransito.Valor != 40) Opcoes.CarrosNoTransito.Valor = 40;
 
 ## Patch Harmony próprio
 
-Prefira um [gancho](/pbs-loader-docs/referencia/pbsloadercommonutils/ganchos/). Se o SDK ainda não tem o ponto que você precisa, peça no repositório do PBSU Loader. Se fizer o patch mesmo assim, fique parado no modo seguro, porque numa versão do jogo que não foi testada o método pode ter mudado:
+Prefira um [gancho](/pbs-loader-docs/referencia/pbsloadercommonutils/ganchos/). Se o SDK ainda não tem o ponto que você precisa, peça no repositório do PBSLoader. Se fizer o patch mesmo assim, fique parado no modo seguro, porque numa versão do jogo que não foi testada o método pode ter mudado:
 
 ```csharp
 public override void OnInitializeMelon()

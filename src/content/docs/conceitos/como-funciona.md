@@ -1,21 +1,21 @@
 ---
-title: Como o PBSU Loader funciona
-description: As peças do PBSU Loader, as duas pastas de mods que existem e a ordem em que tudo carrega.
+title: Como o PBSLoader funciona
+description: As peças do PBSLoader, as duas pastas de mods que existem e a ordem em que tudo carrega.
 sidebar:
   order: 1
 ---
 
-O Proton Bus Simulator Urbano não carrega código de terceiros sozinho. Quem faz isso é o MelonLoader, e o PBSU Loader é o conjunto de peças em volta dele: um instalador, duas bibliotecas obrigatórias e um catálogo de mods.
+O Proton Bus Simulator Urbano não carrega código de terceiros sozinho. Quem faz isso é o MelonLoader, e o PBSLoader é o conjunto de peças em volta dele: um instalador, duas bibliotecas obrigatórias e um catálogo de mods.
 
 ## As peças
 
 | Peça | O que é | Onde fica |
 |---|---|---|
-| MelonLoader | Carregador de mods para jogos Unity. Entra no jogo pelo `version.dll` e carrega toda DLL que estiver na pasta `Mods`. O PBSU Loader usa a versão 0.7.3. | `version.dll` e `MelonLoader/` na pasta do jogo |
+| MelonLoader | Carregador de mods para jogos Unity. Entra no jogo pelo `version.dll` e carrega toda DLL que estiver na pasta `Mods`. O PBSLoader usa a versão 0.7.3. | `version.dll` e `MelonLoader/` na pasta do jogo |
 | PBSLoaderCommonUtils | O SDK. Lê o estado do jogo a cada quadro e entrega esses dados ao seu mod em classes como `Veiculo`, `Mapa` e `Tempo`. Também carrega os scripts de ônibus e de mapa. A parte visual fica com a PBSLoaderCommonInterface. | `Mods/PBSLoaderCommonUtils.dll` |
 | PBSLoaderCommonInterface | A interface comum: menus redesenhados, o menu **Mods** com as opções de cada mod, o painel de condução e os avisos na tela. Outros mods usam ela para ter painéis e cartões no HUD. | `Mods/PBSLoaderCommonInterface.dll` |
 | Instalador (`PbsuLoader.exe`) | Programa do Windows que instala o MelonLoader, as duas bibliotecas e os mods escolhidos, e atualiza tudo depois. | onde o jogador baixar |
-| Catálogo (`catalogo.json`) | A lista de mods que o instalador oferece. Cada mod fica no repositório do autor e entra no catálogo por pull request. | [repositório do PBSU Loader](https://github.com/Sebola3461/pbsu-loader) |
+| Catálogo (`catalogo.json`) | A lista de mods que o instalador oferece. Cada mod fica no repositório do autor e entra no catálogo por pull request. | [repositório do PBSLoader](https://github.com/Sebola3461/pbsu-loader) |
 | O seu mod | Uma DLL do MelonLoader compilada contra a PBSLoaderCommonUtils, ou um script que vem junto de um ônibus ou mapa. Veja [Tipos de mod](../tipos-de-mod/). | depende do tipo |
 
 As duas bibliotecas são obrigatórias: o instalador sempre instala as duas, e um mod do catálogo pode contar com elas presentes.

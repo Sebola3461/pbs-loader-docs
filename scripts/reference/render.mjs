@@ -89,14 +89,14 @@ function groupByNamespace(types) {
 
 function renderOverview(loaded, base) {
 	const intro = loaded.length === 0
-		? 'A referência ainda não foi publicada. Ela aparece aqui quando sair um release do PBSU Loader com o arquivo `.api.json` de cada biblioteca.'
-		: 'Tipos e membros públicos das bibliotecas do PBSU Loader, gerados a partir da DLL de cada release. Membros sem descrição ainda não têm comentário de documentação no código.';
+		? 'A referência ainda não foi publicada. Ela aparece aqui quando sair um release do PBSLoader com o arquivo `.api.json` de cada biblioteca.'
+		: 'Tipos e membros públicos das bibliotecas do PBSLoader, gerados a partir da DLL de cada release. Membros sem descrição ainda não têm comentário de documentação no código.';
 	const rows = loaded.map(({ document }) =>
 		`| [${document.assembly}](${base}${librarySlug(document.assembly)}/) | ${document.version} | ${document.types.length} |`);
 	const table = rows.length ? `\n\n| Biblioteca | Versão | Tipos |\n|---|---|---|\n${rows.join('\n')}` : '';
 	return {
 		path: `${OUTPUT_FOLDER}/index.md`,
-		content: frontmatter({ title: 'Referência da API', description: 'Tipos e membros públicos das bibliotecas do PBSU Loader.', editUrl: false })
+		content: frontmatter({ title: 'Referência da API', description: 'Tipos e membros públicos das bibliotecas do PBSLoader.', editUrl: false })
 			+ '\n' + intro + table + '\n',
 	};
 }

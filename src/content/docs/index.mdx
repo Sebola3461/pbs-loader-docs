@@ -1,5 +1,5 @@
 ---
-title: PBSU Loader SDK
+title: PBSLoader SDK
 description: SDK de mods do Proton Bus Simulator Urbano. Lê o jogo e expõe veículo, mapa, linha, passageiros, hora e clima em classes estáticas com nomes em português.
 template: splash
 hero:
@@ -11,7 +11,7 @@ hero:
     - text: Referência da API
       link: referencia/
       variant: secondary
-    - text: Repositório do PBSU Loader
+    - text: Repositório do PBSLoader
       link: https://github.com/Sebola3461/pbsu-loader
       icon: external
       variant: minimal
@@ -19,9 +19,9 @@ hero:
 
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-A PBSLoaderCommonUtils é a base que o PBSU Loader instala junto com o MelonLoader. Ela lê o estado do jogo a cada quadro e entrega esses dados ao seu mod em classes como `Veiculo`, `Mapa`, `Linha` e `Tempo`. Também oferece ganchos no jogo, atalhos de teclado com detecção de conflito, avisos na tela e uma simulação de ar comprimido.
+A PBSLoaderCommonUtils é a base que o PBSLoader instala junto com o MelonLoader. Ela lê o estado do jogo a cada quadro e entrega esses dados ao seu mod em classes como `Veiculo`, `Mapa`, `Linha` e `Tempo`. Também oferece ganchos no jogo, atalhos de teclado com detecção de conflito, avisos na tela e uma simulação de ar comprimido.
 
-Se é a primeira vez aqui, leia [Como o PBSU Loader funciona](conceitos/como-funciona/) e [Tipos de mod](conceitos/tipos-de-mod/). Elas explicam a diferença entre um mod global e os scripts que vêm dentro de um ônibus ou de um mapa, e onde cada coisa fica. Antes de escrever o primeiro mod, passe pelas [Boas práticas](guias/boas-praticas/): elas dizem onde ler e onde mudar cada coisa do jogo sem derrubá-lo nem brigar com outros mods.
+Se é a primeira vez aqui, leia [Como o PBSLoader funciona](conceitos/como-funciona/) e [Tipos de mod](conceitos/tipos-de-mod/). Elas explicam a diferença entre um mod global e os scripts que vêm dentro de um ônibus ou de um mapa, e onde cada coisa fica. Antes de escrever o primeiro mod, passe pelas [Boas práticas](guias/boas-praticas/): elas dizem onde ler e onde mudar cada coisa do jogo sem derrubá-lo nem brigar com outros mods.
 
 <CardGrid>
 	<LinkCard

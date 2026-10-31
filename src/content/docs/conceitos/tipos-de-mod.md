@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-Existem quatro jeitos de mudar o jogo com o PBSU Loader. Três têm código; o primeiro, não.
+Existem quatro jeitos de mudar o jogo com o PBSLoader. Três têm código; o primeiro, não.
 
 | | Conteúdo do jogo | Mod global | Script de ônibus | Script de mapa |
 |---|---|---|---|---|
@@ -19,7 +19,7 @@ Existem quatro jeitos de mudar o jogo com o PBSU Loader. Três têm código; o p
 
 ## Conteúdo do jogo (sem código)
 
-São os mods que a comunidade do Proton sempre fez: um ônibus é um arquivo `.ini` em `buses/` mais uma pasta com modelos, texturas e sons; um mapa é um `.map.txt` em `maps/` mais a pasta dele. O jogo lê esses arquivos sozinho, sem MelonLoader e sem o PBSU Loader.
+São os mods que a comunidade do Proton sempre fez: um ônibus é um arquivo `.ini` em `buses/` mais uma pasta com modelos, texturas e sons; um mapa é um `.map.txt` em `maps/` mais a pasta dele. O jogo lê esses arquivos sozinho, sem MelonLoader e sem o PBSLoader.
 
 O SDK lê o que o jogo carregou. `Veiculo.Pasta` é a pasta do ônibus em uso, e `Mapa.Pasta` e `Mapa.Versao` vêm do mod de mapa. `Sessao.OrigemDoOnibus` e `Mapa.Origem` dizem se aquilo veio com o jogo ou de um mod.
 
