@@ -5,6 +5,8 @@ description: Para quem é esta documentação, que versões ela cobre e como us�
 
 Esta documentação é para quem escreve mods em C# para o Proton Bus Simulator Urbano usando o SDK do PBSU Loader, a biblioteca PBSLoaderCommonUtils. Quem só quer jogar com mods encontra o instalador e as instruções no [repositório do PBSU Loader](https://github.com/Sebola3461/pbsu-loader).
 
+Para entender as peças antes do código, comece por [Como o PBSU Loader funciona](/pbs-loader-docs/conceitos/como-funciona/) e [Tipos de mod](/pbs-loader-docs/conceitos/tipos-de-mod/).
+
 A [referência da API](/pbs-loader-docs/referencia/) lista cada classe, propriedade, método e evento público da PBSLoaderCommonUtils e da PBSLoaderCommonInterface, com a assinatura em C#. Ela é gerada a partir das DLLs de cada release.
 
 ## Versões cobertas

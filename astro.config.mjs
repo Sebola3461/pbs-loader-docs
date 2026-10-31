@@ -31,6 +31,14 @@ export default defineConfig({
 					label: 'Começando',
 					items: [{ slug: 'comecando/sobre-esta-documentacao' }],
 				},
+				{
+					label: 'Conceitos',
+					items: [{ autogenerate: { directory: 'conceitos' } }],
+				},
+				{
+					label: 'Guias',
+					items: [{ autogenerate: { directory: 'guias' } }],
+				},
 				...(hasReference ? [{ label: 'Referência da API', items: referenceSidebar }] : []),
 			],
 			plugins: [
